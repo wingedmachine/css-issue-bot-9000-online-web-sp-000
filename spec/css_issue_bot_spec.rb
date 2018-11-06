@@ -19,7 +19,6 @@ RSpec.describe 'styling' do
 
     it 'corrects the .completed font family declaration' do
       selector = parsed_css.find_by_selector('.completed')[0]
-      binding.pry
       expect(selector).to include("font-size: 12px;"), "Missing properly formatted .completed font size declaration"
     end
 
